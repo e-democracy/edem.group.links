@@ -4,11 +4,23 @@
   xmlns:five="http://namespaces.zope.org/five">
 
     
-  <browser:page name="gs-group-topics-ajax.html"
+  <browser:page 
+    name="changelinks.html"
     for="gs.group.base.interfaces.IGSGroupMarker"
-    template="browser/templates/ajax.pt"
-    class=".ajax.TopicsAjax"
+    class=".changelinks.ChangeLinks"
     layer="gs.skin.ogn.edem.interfaces.IEDemLayer"
-    permission="zope2.View"/>
+    permission="zope2.ManageProperties"/>
+
+  <!--The link to the Change Links page-->
+  <browser:viewlet 
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    name="gs-group-links-change-link"
+    manager="gs.group.properties.interfaces.IGroupAdminPropertiesLinks"
+    template="browser/templates/propertieslinks.pt"
+    class="gs.group.member.base.viewlet.GroupAdminViewlet"
+    permission="zope2.ManageProperties"
+    weight="2"
+    title="Change About Link" />
+
 </configure>
 
