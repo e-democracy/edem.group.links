@@ -14,13 +14,14 @@
   <!--The link to the Change Links page-->
   <browser:viewlet 
     for="gs.group.base.interfaces.IGSGroupMarker"
-    name="gs-group-links-change-link"
+    layer="gs.skin.ogn.edem.interfaces.IEDemLayer"
+    name="edem-group-links-change-link"
     manager="gs.group.properties.interfaces.IGroupAdminPropertiesLinks"
     template="browser/templates/propertieslinks.pt"
     class="gs.group.member.base.viewlet.GroupAdminViewlet"
     permission="zope2.ManageProperties"
-    weight="2"
-    title="Change About Link" />
+    weight="1"
+    title="Change Links Link" />
 
 </configure>
 
