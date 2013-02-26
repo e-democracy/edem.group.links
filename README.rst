@@ -15,3 +15,12 @@ The *Change the Links Tab" page is a simple form that changes the
 ``related_links`` property of the group. This module provides the *Change* page
 itself and the link from the *Properties* list in the *Admin* tab on the
 *Group* page to the *Change* page.
+
+Group Admin Link
+================
+
+In addition to defining the Change Links page, this egg also defines a viewlet
+for the group admin section of a group. At the moment the group page that is
+defined by gs.skin.ogn.edem does not use viewlets to create its admin section
+(unlike the default GroupServer group home page), so this viewlet is actually
+not used. However, in the future it should be.
