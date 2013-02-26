@@ -25,7 +25,7 @@ class ChangeLinks(GroupForm):
     def form_fields(self):
         enforce_schema(self.context, IChangeLinks)
         retval = form.Fields(IChangeLinks, render_context=True)
-        retval['linksText'].custom_widget = wym_editor_widget
+        retval['related_links'].custom_widget = wym_editor_widget
         return retval
 
     @form.action(label=u'Change', failure='handle_change_action_failure')
