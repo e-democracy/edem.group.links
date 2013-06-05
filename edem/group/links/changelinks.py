@@ -7,6 +7,7 @@ from gs.content.form.utils import enforce_schema
 from gs.group.base.form import GroupForm
 from interfaces import IChangeLinks
 
+
 class ChangeLinks(GroupForm):
     pageTemplateFileName = 'browser/templates/changelinks.pt'
     template = ZopeTwoPageTemplateFile(pageTemplateFileName)
@@ -19,7 +20,6 @@ class ChangeLinks(GroupForm):
         retval = u'Change the Links tab for %s' % self.groupInfo.name
         assert type(retval) == unicode
         return retval
-
 
     @Lazy
     def form_fields(self):
@@ -41,4 +41,3 @@ class ChangeLinks(GroupForm):
             self.status = u'<p>There is an error:</p>'
         else:
             self.status = u'<p>There are errors:</p>'
-
