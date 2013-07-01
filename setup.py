@@ -11,7 +11,7 @@ setup(name='edem.group.links',
     long_description=open("README.txt").read() + "\n" +
                       open(os.path.join("docs", "HISTORY.txt")).read(),
     classifiers=[
-      "Development Status :: 1 - Planning",
+      "Development Status :: 5 - Production/Stable",
       "Environment :: Web Environment",
       "Framework :: Zope2",
       "Intended Audience :: Developers",
