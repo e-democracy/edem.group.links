@@ -32,7 +32,7 @@ setup(name='edem.group.links',
     zip_safe=True,
     install_requires=[
         'setuptools',
-        'gs.skin.ogn.edem',
+        'edem.skin',
         'gs.content.form',
         'gs.group.base',
         'gs.group.home',

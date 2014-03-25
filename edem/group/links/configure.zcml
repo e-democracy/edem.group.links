@@ -8,13 +8,13 @@
     name="changelinks.html"
     for="gs.group.base.interfaces.IGSGroupMarker"
     class=".changelinks.ChangeLinks"
-    layer="gs.skin.ogn.edem.interfaces.IEDemLayer"
+    layer="edem.skin.interfaces.IEDemLayer"
     permission="zope2.ManageProperties"/>
 
   <!--The link to the Change Links page-->
   <browser:viewlet 
     for="gs.group.base.interfaces.IGSGroupMarker"
-    layer="gs.skin.ogn.edem.interfaces.IEDemLayer"
+    layer="edem.skin.interfaces.IEDemLayer"
     name="edem-group-links-change-link"
     manager="gs.group.properties.interfaces.IGroupAdminPropertiesLinks"
     template="browser/templates/propertieslinks.pt"
