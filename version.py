@@ -66,5 +66,5 @@ def get_version():
 
 
 if __name__ == '__main__':
-    print get_version()
+    import sys
     sys.stdout.write('{0}\n'.format(get_version()))
