@@ -33,7 +33,7 @@ setup(name='edem.group.links',
     install_requires=[
         'setuptools',
         'edem.skin',
-        'gs.content.form',
+        'gs.content.form.base',
         'gs.group.base',
         'gs.group.home',
         'gs.viewlet',
